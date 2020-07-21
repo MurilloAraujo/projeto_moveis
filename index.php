@@ -1,24 +1,18 @@
 <?php
 
-//echo phpinfo();
+require __DIR__  . "/Classes/User.php";
+require __DIR__  . "/Classes/Address.php";
 
+use Source\Lib\User;
 
-$userLinux = "fulano";
+$user = new User(1, "Murillo", "murilloaraujog@gmail.com");
+$user->setData(1, "cidade", "São Paulo");
+//$user->removeData(1, "cidade");
 
-echo "<p> o Usuário é {$userLinux} </p>";
-
-
-$server = [];
-
-$server = [
-
-   "ip" => "192.168.0.1",
-   "port" => 3326,
-   "dns" => "8.8.8."	 		
-
-
-];
+$addres = new \Source\Lib\Address(1, "a", "s");
+echo $addres->getMail();
 
 var_dump(
-$server
+    $user
 );
+
