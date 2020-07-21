@@ -2,6 +2,7 @@ $(function () {
 
     $(".close_menu_aside").click(function () {
 
+        // adiciona o ícone
         if (!$(this).hasClass("icon-cancel-circle")) {
 
             $(this).removeClass("icon-menu");
