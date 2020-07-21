@@ -5,7 +5,12 @@ $(function () {
         if (!$(this).hasClass("icon-cancel-circle")) {
 
             $(this).removeClass("icon-menu");
-            $(this).css("transition", "1s")
+
+            $(this).css({
+                "transition": "0.2s",
+                "transform": "rotate(40deg)"
+            })
+
             $(this).addClass("icon-cancel-circle").css("color", "#fff");
 
             $(".menu_absolute").animate({
@@ -13,6 +18,11 @@ $(function () {
             }, 270)
 
         } else {
+
+            $(this).css({
+                "transition": "0.2s",
+                "transform": "rotate(-0.5deg)"
+            })
 
             $(".icon-cancel-circle").animate({
                 "transform": "rotate(40deg)"

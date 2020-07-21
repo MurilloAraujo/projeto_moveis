@@ -22,6 +22,10 @@
         height: 100%;
     }
 
+    body {
+        height: 1500px;
+    }
+
     ul {
         list-style: none;
     }
@@ -126,10 +130,12 @@
 
     }
 
-    .rotate {
-        transform: rotate(40deg);
-        transition-delay: 2s;
+    .effect {
+        transition: 1s linear;
+        transform: rotate(180deg);
     }
+
+
 
 </style>
 
