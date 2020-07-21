@@ -12,6 +12,7 @@ $(function () {
                 "transform": "rotate(40deg)"
             })
 
+            //adiciona a classe
             $(this).addClass("icon-cancel-circle").css("color", "#fff");
 
             $(".menu_absolute").animate({
